@@ -20,7 +20,7 @@
 
 ### isNaN
 
-Se usa para evaluar si un elemento no es un número. Retornando un `true` si no es un número y un `false` en caso de serlo.
+Se usa para evaluar si un elemento no es un número. Retorna un `true` si no es un número y un `false` en caso de serlo.
 
 ```js
 isNaN(10);          // false
