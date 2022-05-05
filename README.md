@@ -1,10 +1,14 @@
-# Métodos en JavaScript
+# Métodos y funciones en JavaScript
+
+<br>
 
 ## Índice
 
 [Números](#números) | [This](#this) 
 --- | --- 
 [.bind](#bind) | [isNaN](#isnan)
+
+<br>
 
 ## Números
 
@@ -29,6 +33,7 @@ isNaN('123ABC');    // true
 isNaN('');          // false: un string vacío es convertido a 0
 isNaN(' ');         // false: un string con solo espacios es convertido a
 ```
+<br>
 
 ## This
 
