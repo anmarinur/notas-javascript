@@ -1,4 +1,4 @@
-# Métodos en JavaScript
+# Métodos y funciones en JavaScript
 
 ## Índice
 
