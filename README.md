@@ -7,12 +7,16 @@
 [Números](#números) | [This](#this) 
 --- | --- 
 [.bind](#bind) | [isNaN](#isnan)
+ | [Math.random](#mathrandom)
 
 <br>
 
 ## Números
 
 - [isNaN](#isnan)
+- [Math.random](#mathrandom)
+
+<br>
 
 ### isNaN
 
@@ -35,9 +39,28 @@ isNaN(' ');         // false: un string con solo espacios es convertido a 0
 ```
 <br>
 
+### Math.random
+
+Función que genera un número aleatorio entre 0 y 1 (el 1 no lo incluye). 
+
+```js
+Math.random(); // Número mayor o igual a 0 y menor que 1
+```
+Si se quiere modificar el rango del número aleatorio se puede implementar el siguiente código:
+
+```js
+let max = 2;
+let min = 1;
+Math.random() * (max - min) + min;  // Número mayor o igual a 1 y menor que 2
+```
+
+<br>
+
 ## This
 
 - [.bind](#bind)
+
+<br>
 
 ### .bind
 
@@ -63,7 +86,11 @@ Para solucionarlo se usa bind de la siguiente forma. Se crea una variable y all�
 const greetingPersona = greeting.bind(persona);
 ```
 
+<br>
+
 >Nota: Aquí no se está ejecutando la función greeting, sino que se está accediendo a la función (que es un objeto, como todo en JS) y su método `.bind`
+
+<br>
 
 Otra forma de utilizar el `.bind` es directamente al crear la función:
 
