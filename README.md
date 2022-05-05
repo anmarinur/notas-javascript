@@ -2,8 +2,9 @@
 
 ## Índice
 
-- [Números](#números)
-- [This](#this)
+[Números](#números) | [This](#this) 
+--- | --- 
+[.bind](#bind) | [isNaN](#isnan)
 
 ## Números
 
@@ -11,7 +12,7 @@
 
 ### isNaN
 
-Se usa para evaluar si un elemento no es un número. Retornando un _true_ si no es un número y un _false_ en caso de serlo.
+Se usa para evaluar si un elemento no es un número. Retornando un `true` si no es un número y un `false` en caso de serlo.
 
 ```js
 isNaN(10);          // false
@@ -35,7 +36,7 @@ isNaN(' ');         // false: un string con solo espacios es convertido a
 
 ### .bind
 
-Se usa para apuntar el _this_ a un objeto deseado. Por ejemplo en el siguiente ejemplo tengo un objeto **persona** con unas propiedads y un método. El _this_ que tiene dicho método apunta al objeto _persona_ y por lo tanto no hay problema. Pero en la función _greeting_ expresada el this no apunta al objeto _persona_ ya que está expresada fuera del objeto y su _this_ apunta a _window_ o el objeto global de donde se esté ejecutando, por lo tanto al invocarla va a dar _undefined_ ya que _window.nombre_ y _window.apellido_ no existen.
+Se usa para apuntar el `this` a un objeto deseado. Por ejemplo en el siguiente ejemplo tengo un objeto `persona` con unas propiedads y un método. El `this` que tiene dicho método apunta al objeto `persona` y por lo tanto no hay problema. Pero en la función `greeting` expresada el `this` no apunta al objeto `persona` ya que está expresada fuera del objeto y su this apunta a `window` o el objeto global de donde se esté ejecutando, por lo tanto al invocarla va a dar `undefined` ya que `window.nombre` y `window.apellido` no existen.
 
 ```js
 const persona = {
@@ -51,15 +52,15 @@ const greeting = function(){
 }
 ``` 
 
-Para solucionarlo se usa bind de la siguiente forma. Se crea una variable y allí se guarda el nombre de la función a la que se le quiere apuntar el this, luego _.bind_ y entre paréntesis el objeto al que se quiere apuntar:
+Para solucionarlo se usa bind de la siguiente forma. Se crea una variable y allí se guarda el nombre de la función a la que se le quiere apuntar el this, luego `.bind` y entre paréntesis el objeto al que se quiere apuntar:
 
 ```js
 const greetingPersona = greeting.bind(persona);
 ```
 
->Nota: Aquí no se está ejecutando la función greeting, sino que se está accediendo a la función (que es un objeto, como todo en JS) y su método .bind
+>Nota: Aquí no se está ejecutando la función greeting, sino que se está accediendo a la función (que es un objeto, como todo en JS) y su método `.bind`
 
-Otra forma de utilizar el _.bind_ es directamente al crear la función:
+Otra forma de utilizar el `.bind` es directamente al crear la función:
 
 ```js
 const greeting2 = function(){
