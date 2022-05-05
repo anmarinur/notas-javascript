@@ -1,8 +1,33 @@
 # Métodos en JavaScript
 
-## Indice
+## Índice
 
 - [This](#this)
+- [Números](#números)
+
+## Números
+
+- [isNaN](#isnan)
+
+### isNaN
+
+Se usa para evaluar si un elemento no es un número. Retornando un _true_ si no es un número y un _false_ en caso de serlo.
+
+```js
+isNaN(10);          // false
+isNaN("Hola");      // true
+isNaN(NaN);         // true
+isNaN(undefined);   // true
+isNaN({});          // true
+isNaN(true);        // false: los valores boolean son tomados como 1 o 0
+isNaN(null);        // false: es un tipo de número
+isNaN('37');        // false: "37" es convertido al número 37
+isNaN('37.37');     // false: "37.37" es convertido al número 37.37
+isNaN("37,5");      // true
+isNaN('123ABC');    // true
+isNaN('');          // false: un string vacío es convertido a 0
+isNaN(' ');         // false: un string con solo espacios es convertido a
+```
 
 ## This
 
