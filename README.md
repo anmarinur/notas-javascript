@@ -64,7 +64,7 @@ Math.random() * (max - min) + min;  // Número mayor o igual a 1 y menor que 2
 
 ### .bind
 
-Se usa para apuntar el `this` a un objeto deseado. Por ejemplo en el siguiente ejemplo tengo un objeto `persona` con unas propiedads y un método. El `this` que tiene dicho método apunta al objeto `persona` y por lo tanto no hay problema. Pero en la función `greeting` expresada el `this` no apunta al objeto `persona` ya que está expresada fuera del objeto y su this apunta a `window` o el objeto global de donde se esté ejecutando, por lo tanto al invocarla va a dar `undefined` ya que `window.nombre` y `window.apellido` no existen.
+Se usa para apuntar el `this` a un objeto deseado. Por ejemplo en el siguiente ejemplo tengo un objeto `persona` con unas propiedads y un método. El `this` que tiene dicho método apunta al objeto `persona` y por lo tanto no hay problema. Pero en la función expresada `greeting` el `this` no apunta al objeto `persona` ya que está expresada fuera del objeto y su this apunta a `window` o el objeto global de donde se esté ejecutando, por lo tanto al invocarla va a dar `undefined` ya que `window.nombre` y `window.apellido` no existen.
 
 ```js
 const persona = {
