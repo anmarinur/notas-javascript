@@ -1,5 +1,7 @@
 # Métodos y funciones en JavaScript
 
+<br>
+
 ## Índice
 
 - [Números](#números)
