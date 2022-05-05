@@ -26,12 +26,12 @@ isNaN(undefined);   // true
 isNaN({});          // true
 isNaN(true);        // false: los valores boolean son tomados como 1 o 0
 isNaN(null);        // false: es un tipo de número
-isNaN('37');        // false: "37" es convertido al número 37
-isNaN('37.37');     // false: "37.37" es convertido al número 37.37
+isNaN('37');        // false: "33" es convertido al número 33
+isNaN('37.37');     // false: "45.62" es convertido al número 45.62
 isNaN("37,5");      // true
 isNaN('123ABC');    // true
 isNaN('');          // false: un string vacío es convertido a 0
-isNaN(' ');         // false: un string con solo espacios es convertido a
+isNaN(' ');         // false: un string con solo espacios es convertido a 0
 ```
 <br>
 
