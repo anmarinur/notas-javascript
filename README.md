@@ -7,7 +7,7 @@
 [Números](#números) | [This](#this) 
 --- | --- 
 [.bind](#bind) | [isNaN](#isnan)
- | [Math.random](#mathrandom)
+[Math.random](#mathrandom) | 
 
 <br>
 
