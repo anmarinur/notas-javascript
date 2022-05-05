@@ -7,14 +7,14 @@
 [Números](#números) | [This](#this) 
 --- | --- 
 [.bind](#bind) | [isNaN](#isnan)
-[Math.random()](#mathrandom) | 
+[Math.random](#mathrandom) | 
 
 <br>
 
 ## Números
 
 - [isNaN](#isnan)
-- [Math.random()](#mathrandom)
+- [Math.random](#mathrandom)
 
 <br>
 
@@ -39,7 +39,7 @@ isNaN(' ');         // false: un string con solo espacios es convertido a 0
 ```
 <br>
 
-### Math.random()
+### Math.random
 
 Función que genera un número aleatorio entre 0 y 1 (el 1 no lo incluye). 
 
