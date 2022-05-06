@@ -115,7 +115,7 @@ crearComentario("/*", "*/", "Soy un comentario en JavaScript"); // /* Soy un com
 Con la anterior función puedo crear nuevas funciones y bindeando algunos argumentos puedo fijarlos para que al final estas solo necesiten de un argumento. Para hacer esto, se asigna a una variable el método de la función y dentro de los argumentos se pone `null` y separado de comas los argumentos que queremos queden fijos en el orden en que aparencen en la función principal.
 
 ```js
-let comentarioHtml = crearComentario.bind(null, "<!--", "-->");
+let comentarioHtml = crearComentario.bind(null, "<--", "-->");  // Tuve que quitar el signo ! porque generaba errores
 comentarioHtml("Soy un comentario en HTML"); // <!-- Soy un comentario en HTML -->
 
 let negritaMarkdown = crearComentario.bind(null, "**", "**");
