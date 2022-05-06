@@ -116,7 +116,7 @@ Con la anterior función puedo crear nuevas funciones y bindeando algunos argume
 
 ```js
 let comentarioHtml = crearComentario.bind(null, "<--", "-->");  // Tuve que quitar el signo ! porque generaba errores
-comentarioHtml("Soy un comentario en HTML"); // <!-- Soy un comentario en HTML -->
+comentarioHtml("Soy un comentario en HTML"); // <-- Soy un comentario en HTML -->
 
 let negritaMarkdown = crearComentario.bind(null, "**", "**");
 negritaMarkdown("Negrita en markdown"); // ** Negrita en markdown **
