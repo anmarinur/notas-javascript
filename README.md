@@ -112,7 +112,7 @@ function crearComentario(stringInicial, stringFinal, cadena) {
 crearComentario("/*", "*/", "Soy un comentario en JavaScript"); // /* Soy un comentario en JavaScript */
 ```
 
-Con la anterior función puedo crear nuevas funciones y bindeando algunos argumentos puedo fijarlos para que al final estas solo necesiten de un argumento. Para hacerlo en una variable se accede a la función a bindear y dentro de los argumentos se pone `null` y separado de comas los argumentos que queremos queden fijos en el orden en que aparencen en la función principal.
+Con la anterior función puedo crear nuevas funciones y bindeando algunos argumentos puedo fijarlos para que al final estas solo necesiten de un argumento. Para hacer esto, se asigna a una variable el método de la función y dentro de los argumentos se pone `null` y separado de comas los argumentos que queremos queden fijos en el orden en que aparencen en la función principal.
 
 ```js
 let comentarioHtml = crearComentario.bind(null, "<!--", "-->");
