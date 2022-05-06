@@ -7,7 +7,7 @@
 [Números](#números) | [This](#this) 
 --- | --- 
 [isNaN](#isnan) | [.bind](#bind)
-[Math.random](#mathrandom) | 
+[Math.random](#mathrandom) | [.call](#call)
 
 <br>
 
@@ -59,6 +59,7 @@ Math.random() * (max - min) + min;  // Número mayor o igual a 1 y menor que 2
 ## This
 
 - [.bind](#bind)
+- [.call](#call)
 
 <br>
 
@@ -83,7 +84,7 @@ const greeting = function(){
 Para solucionarlo se usa bind de la siguiente forma. Se crea una variable y allí se guarda el nombre de la función a la que se le quiere apuntar el this, luego `.bind` y entre paréntesis el objeto al que se quiere apuntar:
 
 ```js
-const greetingPersona = greeting.bind(persona);
+const greetingPersona = greeting.bind(persona); // Hello Anderson Marín
 ```
 
 <br>
@@ -121,3 +122,31 @@ comentarioHtml("Soy un comentario en HTML"); // <-- Soy un comentario en HTML --
 let negritaMarkdown = crearComentario.bind(null, "**", "**");
 negritaMarkdown("Negrita en markdown"); // ** Negrita en markdown **
 ```
+
+<br>
+
+### .call
+
+Call es muy similar a [.bind](#bind). Es decir con los dos puedo apuntar el this al objeto que yo quiera. La diferencia es que bind no ejecuta la función bindeada y por eso se debe crear una variable para luego invocarla y así ejecutar la función. Mientras que `call` si invoca la función de una vez:
+
+```js
+const persona = {
+    nombre: "Anderson",
+    apellido: "Marín",
+    saludo: function(){
+        console.log(`Hola ${this.nombre} ${this.apellido}`); // Hola Anderson Marín
+    }
+}
+
+const greeting = function(){
+    console.log(`Hello ${this.nombre} ${this.apellido}`); // Hello undefined undefined
+}
+
+// Con bind es necesario utilizar una variable y luego invocarla
+const greetingPersona = greeting.bind(persona);
+greetingPersona();
+
+// Con call la función es invocada
+greeting.call(persona); // Hello Anderson Marín
+``` 
+
