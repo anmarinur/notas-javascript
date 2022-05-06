@@ -100,6 +100,8 @@ const greeting2 = function(){
 }.bind(persona);
 ```
 
+<br>
+
 Además de "bindear" al this, también se pueden bindear argumentos de una función. Por ejemplo la función `crearComentario` recibe tres argumentos. Un string inicial, un string final y la cadena de texto a comentar. 
 
 ```js
