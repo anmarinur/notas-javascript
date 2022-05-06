@@ -99,3 +99,23 @@ const greeting2 = function(){
   console.log(`Hi ${this.nombre} ${this.apellido}`); // Hi Anderson Marín
 }.bind(persona);
 ```
+
+Además de "bindear" al this, también se pueden bindear argumentos de una función. Por ejemplo la función `crearComentario` recibe tres argumentos. Un string inicial, un string final y la cadena de texto a comentar. 
+
+```js
+function crearComentario(stringInicial, stringFinal, cadena) {
+    return stringInicial + " " + cadena + " " + stringFinal;
+}
+
+crearComentario("/*", "*/", "Soy un comentario en JavaScript); // /* Soy un comentario en JavaScript */
+```
+
+Con la anterior función puedo crear nuevas funciones y bindeando algunos argumentos puedo fijarlos para que al final estas solo necesiten de un argumento. Para hacerlo en una variable se accede a la función a bindear y dentro de los argumentos se pone `null` y separado de comas los argumentos que queremos queden fijos en el orden en que aparencen en la función principal.
+
+```js
+let comentarioHtml = crearComentario.bind(null, "<!--", "-->");
+comentarioHtml("Soy un comentario en HTML"); // <!-- Soy un comentario en HTML -->
+
+let negritaMarkdown = crearComentario.bind(null, "**", "**");
+negritaMarkdown("Negrita en markdown"); // ** Negrita en markdown **
+```
