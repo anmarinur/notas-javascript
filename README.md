@@ -4,10 +4,10 @@
 
 ## Índice
 
-[Números](#números) | [This](#this) 
---- | --- 
-[isNaN](#isnan) | [.bind](#bind)
-[Math.random](#mathrandom) | [.call](#call)
+[Números](#números) | [Otros](#otros) | [This](#this)
+--- | --- | ---
+[isNaN](#isnan) | [typeof](#typeof) | [.bind](#bind)
+[Math.random](#mathrandom) | | [.call](#call)
 
 <br>
 
@@ -52,6 +52,30 @@ Si se quiere modificar el rango del número aleatorio se puede implementar el si
 let max = 2;
 let min = 1;
 Math.random() * (max - min) + min;  // Número mayor o igual a 1 y menor que 2
+```
+
+<br>
+
+## Otros
+
+- [typeof](#typeof)
+
+<br>
+
+### typeof
+
+Operador que devuelve el tipo de un elemento. Su salida es un string. El valor evaluado puede ir dentro de paréntesis pero es opcional.
+
+```js
+var miFuncion = function(){console.log("Hola")};
+var texto = "Anderson";
+var numero = 13;
+var miObjeto = {name: "objeto", cantidad: 13};
+
+console.log(typeof miFuncion); // "function"
+console.log(typeof texto); // "string"
+console.log(typeof numero); // "number"
+console.log(typeof miObjeto);  // "object"
 ```
 
 <br>
