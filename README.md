@@ -4,7 +4,7 @@
 
 ## Índice
 
-[Números](#números) | [Otros](#otros) | [This](#this) | [Set](#set) | Objetos
+[Números](#números) | [Otros](#otros) | [This](#this) | [Set](#set) | [Objetos](#foreach)
 --- | --- | --- | --- | ---
 [isNaN](#isnan) | [typeof](#typeof) | [.bind](#bind) | [.add](#add) | [.forEach](#foreach)
 [Math.random](#mathrandom) | | [.call](#call) | [.clear](#clear) | 
@@ -57,6 +57,10 @@ Math.random() * (max - min) + min;  // Número mayor o igual a 1 y menor que 2
 ```
 
 <br>
+
+## Objetos
+
+- [.forEach](#foreach)
 
 ## Otros
 
