@@ -8,6 +8,7 @@
 --- | --- | --- | ---
 [isNaN](#isnan) | [typeof](#typeof) | [.bind](#bind) | [.add](#add)
 [Math.random](#mathrandom) | | [.call](#call) | [.clear](#clear)
+ | | | | [.delete](#delete)
 
 <br>
 
@@ -84,6 +85,7 @@ console.log(typeof miObjeto);  // "object"
 
 - [.add](#add)
 - [.clear](#clear)
+- [.delete](#delete)
 
 <br>
 
@@ -115,12 +117,32 @@ let set1 = new Set();
 set1.add(3);    // set1 = { 3 }
 set1.add(4);    // set1 = { 3, 4 }
 set1.add(0);    // set1 = { 3, 4, 0 }
-set1.add(4);    // set1 = { 3, 4, 0 } No agrega el 4 porque ya existe dentro del elemento
 set1.add("Hola");   // set1 = { 3, 4, 0, "Hola" } 
 
 console.log(set1);
 
-set1.clear();
+set1.clear();   // Remueve todos los elementos de set1
+
+console.log(set1);
+```
+
+<br>
+
+### .delete
+
+Remueve el elemento indicado de un `set`.
+
+```js
+let set1 = new Set();   
+
+set1.add(3);    // set1 = { 3 }
+set1.add(4);    // set1 = { 3, 4 }
+set1.add(0);    // set1 = { 3, 4, 0 }
+set1.add("Hola");   // set1 = { 3, 4, 0, "Hola" } 
+
+console.log(set1);
+
+set1.delete("Hola");    // Remueve "Hola" de set1
 
 console.log(set1);
 ```
