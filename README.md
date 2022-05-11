@@ -4,7 +4,7 @@
 
 ## Índice
 
-[Números](#números) | [Otros](#otros) | [This](#this) | [Set](#set) | [Objetos](#foreach)
+[Números](#números) | [Otros](#otros) | [This](#this) | [Set](#set) | [Objetos](#objetos)
 --- | --- | --- | --- | ---
 [isNaN](#isnan) | [typeof](#typeof) | [.bind](#bind) | [.add](#add) | [.forEach](#foreach)
 [Math.random](#mathrandom) | | [.call](#call) | [.clear](#clear) | 
