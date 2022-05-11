@@ -4,11 +4,12 @@
 
 ## Índice
 
-[Números](#números) | [Otros](#otros) | [This](#this) | [Set](#set)
---- | --- | --- | ---
-[isNaN](#isnan) | [typeof](#typeof) | [.bind](#bind) | [.add](#add)
-[Math.random](#mathrandom) | | [.call](#call) | [.clear](#clear)
- | | | | [.delete](#delete)
+[Números](#números) | [Otros](#otros) | [This](#this) | [Set](#set) | Objetos
+--- | --- | --- | --- | ---
+[isNaN](#isnan) | [typeof](#typeof) | [.bind](#bind) | [.add](#add) | [.forEach](#foreach)
+[Math.random](#mathrandom) | | [.call](#call) | [.clear](#clear) | 
+  | | | | [.delete](#delete) | | 
+  | | | | [.forEach](#foreach) | |
 
 <br>
 
@@ -86,6 +87,7 @@ console.log(typeof miObjeto);  // "object"
 - [.add](#add)
 - [.clear](#clear)
 - [.delete](#delete)
+- [.forEach](#foreach)
 
 <br>
 
@@ -145,6 +147,37 @@ console.log(set1);
 set1.delete("Hola");    // Remueve "Hola" de set1
 
 console.log(set1);
+```
+
+<br>
+
+### .forEach
+
+Método que recorre un elemento iterable, como arrays, sets. Se usa igual en ambos casos.
+
+```js
+// Se puede hacer definiendo la función de esta forma
+set1.forEach(function(element) {
+    console.log(element);
+});
+
+// Se puede también usar arrow function
+set1.forEach(element => console.log(element))
+
+// element en ambos casos es la variable en donde se guarda cada elemento iterando.
+```
+
+```js
+let set1 = new Set();   
+
+set1.add(3);    // set1 = { 3 }
+set1.add(4);    // set1 = { 3, 4 }
+set1.add(0);    // set1 = { 3, 4, 0 }
+set1.add("Hola");   // set1 = { 3, 4, 0, "Hola" } 
+
+console.log(set1);
+
+set1.forEach(element => console.log(element));    // Imprime cada elemento de set1
 ```
 
 <br>
