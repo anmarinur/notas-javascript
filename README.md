@@ -91,13 +91,13 @@ console.log(typeof miObjeto);  // "object"
 Agrega un elemento al final de un `set`, siempre y cuando este ya no esté dentro, ya que no permite elementos repetidos.
 
 ```js
-let set1 = new Set();
+let set1 = new Set();   
 
-set1.add(3);
-set1.add(4);
-set1.add(0);
-set1.add(4);
-set1.add("Hola");
+set1.add(3);    // set1 = { 3 }
+set1.add(4);    // set1 = { 3, 4 }
+set1.add(0);    // set1 = { 3, 4, 0 }
+set1.add(4);    // set1 = { 3, 4, 0 } No agrega el 4 porque ya existe dentro del elemento
+set1.add("Hola");   // set1 = { 3, 4, 0, "Hola" } 
 
 console.log(set1);
 ```
