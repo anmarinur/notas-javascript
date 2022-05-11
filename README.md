@@ -4,10 +4,10 @@
 
 ## Índice
 
-[Números](#números) | [Otros](#otros) | [This](#this)
---- | --- | ---
-[isNaN](#isnan) | [typeof](#typeof) | [.bind](#bind)
-[Math.random](#mathrandom) | | [.call](#call)
+[Números](#números) | [Otros](#otros) | [This](#this) | [Set](#set)
+--- | --- | --- | ---
+[isNaN](#isnan) | [typeof](#typeof) | [.bind](#bind) | [.add](#add)
+[Math.random](#mathrandom) | | [.call](#call) |
 
 <br>
 
@@ -76,6 +76,30 @@ console.log(typeof miFuncion); // "function"
 console.log(typeof texto); // "string"
 console.log(typeof numero); // "number"
 console.log(typeof miObjeto);  // "object"
+```
+
+<br>
+
+## Set
+
+- [.add](#add)
+
+<br>
+
+### .add
+
+Agrega un elemento al final de un `set`, siempre y cuando este ya no esté dentro, ya que no permite elementos repetidos.
+
+```js
+let set1 = new Set();
+
+set1.add(3);
+set1.add(4);
+set1.add(0);
+set1.add(4);
+set1.add("Hola");
+
+console.log(set1);
 ```
 
 <br>
