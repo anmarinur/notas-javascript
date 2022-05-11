@@ -10,6 +10,7 @@
 [Math.random](#mathrandom) | | [.call](#call) | [.clear](#clear) | 
   | | | | [.delete](#delete) | | 
   | | | | [.forEach](#foreach) | |
+  | | | | [.has](#has) | |
 
 <br>
 
@@ -92,6 +93,7 @@ console.log(typeof miObjeto);  // "object"
 - [.clear](#clear)
 - [.delete](#delete)
 - [.forEach](#foreach)
+- [.has](#has)
 
 <br>
 
@@ -182,6 +184,25 @@ set1.add("Hola");   // set1 = { 3, 4, 0, "Hola" }
 console.log(set1);
 
 set1.forEach(element => console.log(element));    // Imprime cada elemento de set1
+```
+
+<br>
+
+### .has
+
+Método que retorna un boolean indicando si un elemento existe o no en un `set`.
+
+```js
+let set1 = new Set();   
+
+set1.add(3);    // set1 = { 3 }
+set1.add(4);    // set1 = { 3, 4 }
+set1.add(0);    // set1 = { 3, 4, 0 }
+set1.add("Hola");   // set1 = { 3, 4, 0, "Hola" } 
+
+console.log(set1);  // set1 = { 3, 4, 0, "Hola" } 
+console.log(set1.has(4));   // true
+console.log(set1.has(2));   // false
 ```
 
 <br>
