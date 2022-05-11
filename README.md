@@ -40,6 +40,7 @@ isNaN('123ABC');    // true
 isNaN('');          // false: un string vacío es convertido a 0
 isNaN(' ');         // false: un string con solo espacios es convertido a 0
 ```
+
 <br>
 
 ### Math.random
@@ -300,4 +301,3 @@ greetingPersona();
 // Con call la función es invocada
 greeting.call(persona); // Hello Anderson Marín
 ``` 
-
