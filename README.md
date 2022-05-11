@@ -7,7 +7,7 @@
 [Números](#números) | [Otros](#otros) | [This](#this) | [Set](#set)
 --- | --- | --- | ---
 [isNaN](#isnan) | [typeof](#typeof) | [.bind](#bind) | [.add](#add)
-[Math.random](#mathrandom) | | [.call](#call) |
+[Math.random](#mathrandom) | | [.call](#call) | 
 
 <br>
 
@@ -98,6 +98,28 @@ set1.add(4);    // set1 = { 3, 4 }
 set1.add(0);    // set1 = { 3, 4, 0 }
 set1.add(4);    // set1 = { 3, 4, 0 } No agrega el 4 porque ya existe dentro del elemento
 set1.add("Hola");   // set1 = { 3, 4, 0, "Hola" } 
+
+console.log(set1);
+```
+
+<br>
+
+### .clear
+
+Remueve todos los elementos de un `set`.
+
+```js
+let set1 = new Set();   
+
+set1.add(3);    // set1 = { 3 }
+set1.add(4);    // set1 = { 3, 4 }
+set1.add(0);    // set1 = { 3, 4, 0 }
+set1.add(4);    // set1 = { 3, 4, 0 } No agrega el 4 porque ya existe dentro del elemento
+set1.add("Hola");   // set1 = { 3, 4, 0, "Hola" } 
+
+console.log(set1);
+
+set1.clear();
 
 console.log(set1);
 ```
