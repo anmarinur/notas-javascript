@@ -7,7 +7,7 @@
 [Números](#números) | [Otros](#otros) | [This](#this) | [Set](#set)
 --- | --- | --- | ---
 [isNaN](#isnan) | [typeof](#typeof) | [.bind](#bind) | [.add](#add)
-[Math.random](#mathrandom) | | [.call](#call) | 
+[Math.random](#mathrandom) | | [.call](#call) | [.clear](#clear)
 
 <br>
 
@@ -83,6 +83,7 @@ console.log(typeof miObjeto);  // "object"
 ## Set
 
 - [.add](#add)
+- [.clear](#clear)
 
 <br>
 
